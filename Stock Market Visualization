@@ -1,0 +1,163 @@
+Section-1: Introduction
+
+[1.1] Introduction: Stock Market Trends and Visualization
+
+
+In the modern economy, stock market analysis has increased in importance, especially for investors, financial analysts and portfolio managers, who must use it as a means to make decisions that not only reduces the risk, but also improves the chances of making profits. From data driven insights and making decisions aptly which are key in devising better strategies for investments. In this report we have delved into the stock market analysis through the use of tools like Python and Tableau which makes the decision-making process streamlined.
+
+The following report delves deeper into the aspects of how data visualization can play an incremental role for the financial institutions by making informed decisions to spot investment opportunities in the stock market, analyzing risk factors, and managing their wealth portfolios with the stock market. The copious amount of data presents variety of different challenges like interpreting the data, identify profitable investment opportunities, and converting financial information into clear insights to minimize losses as much as possible
+
+[1.2] Problem Statement
+
+The main focus of the report and the project revolves around two major problems that often lead to bad or risky investment opportunities:
+
+Identifying historical price movement patterns
+identifying potential correlations between a company's financial parameters (such as revenue, eps, and other metrics) and its stock performance.
+
+An effective and robust data visualization model helps in navigating through these challenges and intricacies of the stock market and how to optimally manage and grow the wealth portfolios. The findings and the results of this report could benefit investment banks like Goldman Sachs
+
+[1.3] Data Selection
+
+The dataset for the analysis of this project would be custom created using python’s Yfinance package. The dataset consists of 24 columns and 1109 rows out of which to solve our problem statement, I’ve selected the following features:
+
+Open Price, Close Price, High Price, Low Price: these prices forms the genesis for identifying historical price movements by providing valuable insights like ranges in which the stock trades, its average moving price, its all time high and low values help identify investment opportunities
+Volume: it generally refers to the quantity of stocks or measures the number of shares traded in a stock or contracts traded in futures or options[2]. It often gives an insight of market strength and investors interest which helps to identify periods of increased trading activity or bulk influx of money into the market or a particular stock by institutional investors.
+Adjusted Close Price: this indicates the actual representation of stock performance while accounting for corporate actions such as dividends and stock splits, enabling consistent comparison over time.
+Revenue: revenue helps to identify the sales pattern or trends of a company. It is the most rudimentary metric for the fundamental analysis of a stock. A direct indicator of company’s performance
+EPS: earnings per share is another financial metric used to gauge profitability per-share wise. It also helps in understanding the company’s ability to earn profitability on current outstanding shares
+Dividends: An important metric that directly hampers the investors sentiments
+Market Capitalization: It indicates the size of the market captured by a company. In simple terms, indicates the market value of the company in comparison to its peers.
+Price to earning ratio: To gauge if a stock is an underdog or overbought. 
+Book value: Offers insights into the company's underlying asset value and potential for value investing strategies, comparing the book value per share to the current market price.
+Debt-to-Equity Ratio: Indicates the company's financial leverage and risk exposure, helping investors assess its solvency, debt repayment capacity, and financial stability.
+Profit Margin: Provides insights into the company's operational efficiency and profitability, indicating its ability to generate profits from revenue and manage costs effectively.
+
+
+
+Fig-1 (Dataset Attributes)
+Investors and analysts may better comprehend the dynamics of the stock market, spot patterns and trends, and make well-informed investment decisions based on fundamental research and historical performance by visualizing the above features; Open price, close price, adjusted close price, volume, high, low provides an insight of the historical price movement patterns. The fundamental metrics like revenue, EPS, book value, profit, P/E ratio, and debt to equity ratio helps to identify the fundamental strength of a company and its stock performance.
+
+
+Fig-2 (Standard Mathematical operations)
+
+[1.4] Tools Used
+
+For this report and project, Python and Tableau will be used to visualize the stock market data and extract some conclusively evident results. Both the tools offer a comprehensive experience for data manipulation and analysis.
+
+For the following reasons python and tableau has been chosen as our visualization tools:
+
+Python: It’s much more flexible and provides customization options. For example, you have the option to customize calculations and visualizations according to one's needs. Advanced analytics options with the help of libraries like plotly, matplotlib, seaborn, and scikit learn which allows to conduct in depth analysis and explore complex relationships between different financial metrics and stock price. On top of that, python is an open source free tool. This translates to readily available libraries and extensive learning resources.
+Tableau: Tableau is an interactive tool, the biggest advantage of tableau is ease of use. With a few drag and drop features you can plot complex graphs. Another distinctive feature of tableau is creating dashboards which could be used to manage financial portfolios and track profit gains. Faster visualization creation is another plus point of using tableau that allows to create faster visuals.
+
+The strategic combination of both the tools can help dig deeper into the financial realms and unearth insights that are useful for spotting trends and identifying investment opportunities.
+
+
+Section-2 : Findings
+
+[2.1] Technical Stock Analysis with Python
+
+Plot-1: It is the time series analysis of our selected stocks. It provides us with the insights to understand the sentiment of the traders and spot short-term investment opportunities
+
+
+
+Fig-3 (Time series analysis of stocks using plotly)
+
+
+
+Plot-2: Volatility analysis, this plot compares the standard deviation of the stock prices and indicates which stock is more prone to price fluctuations. The more volatile the stock, the less favorable it would be for the investment. As per the following plot, it could be inferred that AAPL and GOOG are less volatile and can be a good choice for our investment strategies.
+
+
+Fig-4 (Volatility analysis of stock prices)
+
+
+Plot-3: Volume traded interpretation, the volume indicates the market activity and investor interest or influx of money into the market. More the volume would pump the prices of a stock. From the following plot it could be inferred that investors have been trading less in AAPL stock which makes it a good investment opportunity for us.
+
+ 
+
+Fig-5 (Volume Traded Interpretation)
+
+
+Plot-4: Correlation Analysis
+Values close to +1 indicate a strong positive correlation, meaning that as one stock’s price increases, the other tends to increase as well. Values close to -1 indicate a strong negative correlation, where one stock’s price increase corresponds to a decrease in the other. Values around 0 indicate a lack of correlation. From the following matrix it could be inferred that there is a strong correlation between the prices of AAPL and MSFT pair, GOOG and MSFT pair.
+
+
+
+Fig-6(Correlation Analysis)
+Plot-5: Cumulative Return, this is the indicator of performance of a stock, how well a stock has done over a period of time. The higher the cumulative return, more promising the investment opportunity will be. It is quite evident from the plot that AAPL has been consistently giving higher returns as compared to the other stocks which makes it a good bet for our investment decision.
+
+
+Fig-7(Cumulative Returns)
+
+
+
+
+Plot-6: Candlestick Pattern, Day traders use candlestick charts to spot cyclic market trends. These charts can be used to spot short term investment opportunities. The following pattern depicts the famous bearish engulfing pattern which signifies a peak or slowdown of price movement, and is a sign of an impending market downturn. 
+
+ 
+
+Fig-8 (Candlestick Pattern)
+
+
+
+[2.2] Fundamental Analysis with Tableau
+
+For the fundamental analysis of the stocks market cap, EPS, Net profit-revenue, and Piotroski F-score method would be used. 
+
+Plot-7: Comparing companies on the basis of market cap or market share. The higher the market cap the better the company's fundamentals. AAPL outbeats everyone by a big margin.
+
+
+Fig-9 (Market Cap)
+
+
+Plot-8: A high EPS means that the company performed well during the earnings period, and investors are willing to pay more for its shares. MSFT is a better investment option.
+
+Fig-10 (Earnings Per Share)
+
+
+Plot-9: Net Profit Margin as a function of revenue. The more the revenue and net profit margin the better is the investment opportunity. 
+
+
+Fig-11 (Net Profit Margin and Revenue)
+Plot-10: The profitability score which measures three parameters: cash flow from operations, return on assets, and accruals. ROA (1 point if it is positive in the current year, 0 otherwise);
+Operating Cash Flow (1 point if it is positive in the current year, 0 otherwise); Accruals (1 point if Operating Cash Flow/Total Assets is higher than ROA in the current year, 0 otherwise). According to this, AAPL scores 3 points, all the three one point. 
+
+
+Fig-12 (The Profitability Indicators)
+
+
+Plot-11: The liquidity criteria, which takes average leverage and current ratio into consideration.
+Leverage (long-term) ratio (2 point if the ratio is lower this year compared to the previous one, 1 otherwise); Change in Current ratio (1 point if it is higher in the current year compared to the previous one, 0 otherwise); As per our plot, AAPL scores 2 points, NFLX 2 points. 
+
+Fig-13 (Liquidity Factor)
+Plot-12: Operating efficiency, Change in Gross Profit (1 point if it is higher in the current year compared to the previous one, 0 otherwise); Change in Asset Turnover ratio (1 point if it is higher in the current year compared to the previous one, 0 otherwise); As per our plot, all the companies scores 2 points except netflix which scores 1 point.
+
+Fig-14 (Operating Efficiency)
+
+
+Section-3 Analysis and Discussion
+
+The findings from the above visualizations can help inform portfolio management, investment decisions, and devising risk hedging strategies. For example:
+
+From plot-1, 2, and 3 it could be inferred that NFLX stock is highly volatile and is not suitable for short term investments. However, plot-1 and plot-3 suggest that it could be a promising investment for long term investors.
+From Plots 7-12, it could be inferred that AAPL stock is fundamentally sound and has strong technical indicators as well which makes it a stock to hedge risk and a safe investment option.
+From the above plots, it could be inferred that MSFT and GOOG are fundamentally in the middle of the spectrum, but relatively less volatile which makes them a good choice for growth stocks. Ideal for long term and short term investment.
+
+Overall, technical and fundamental visualization data can help investors make informed decisions.
+
+
+Section-4 Conclusion
+
+In conclusion, this project helped us realize the true potential of visualization using Python and Tableau in analyzing stock market prices. This exploration leveraged historical stock prices and financial metrics to investigate market trends and potential correlations between a company's financial health and its stock performance. The candlestick charts and time series plot helped in historical price movements for chosen stocks, allowing for comparison with the broader market and identification of potential trends. The correlation matrix and heatmaps helped us explore potential correlations between financial metrics like EPS and P/E ratio with a company's stock price. This can provide valuable insights into a company's underlying financial performance.
+
+
+
+
+
+
+
+
+
+
+
+
+
